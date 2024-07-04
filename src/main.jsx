@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import 'normalize.css'
-import "./index.css";
+import "normalize.css"
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import rtlPlugin from "stylis-plugin-rtl";
 import { prefixer } from "stylis";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
+import "./fonts/iranyekan/style.css"
 
 const cacheRtl = createCache({
 	key: "muirtl",

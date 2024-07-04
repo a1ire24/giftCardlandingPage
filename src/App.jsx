@@ -1,16 +1,22 @@
-import Header from "src/components/Header.jsx";
-import Footer from "src/components/Footer.jsx";
-import Shops from "src/components/Shops.jsx";
+import Box from "@mui/material/Box";
 
-import "./App.css";
+import Header from "./components/Header.jsx";
+import Shops from "./components/Shops.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
 	return (
-		<div id="main">
+		<Box
+			sx={{
+				display: "flex",
+				flexDirection: "column",
+				justifyContent: "space-between",
+			}}
+		>
 			<Header/>
 			<Shops/>
-			<Footer/>
-		</div>
+			<Footer/> 
+		</Box>
 	);
 }
 
